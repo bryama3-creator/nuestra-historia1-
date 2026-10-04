@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Para Fiorella ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PANTALLA 1: BIENVENIDA -->
+<section id="bienvenida" class="pantalla activa">
+  <h1 id="saludo"></h1>
+  <p>Preparé algo especialmente para ti.</p>
+  <p class="suave">Pero antes de entrar... tienes que recordar una fecha que significa mucho para nosotros.</p>
+  <button class="btn" id="btnIngresar">INGRESAR ❤️</button>
+</section>
+
+<!-- PANTALLA 2: FECHA -->
+<section id="acceso" class="pantalla">
+  <h2>Solo tú puedes entrar aquí ❤️</h2>
+  <p>¿Cuál es nuestra fecha?</p>
+  <input id="fecha" type="text" inputmode="numeric" placeholder="dd/mm/aaaa" maxlength="10" autocomplete="off">
+  <p id="error" class="error"></p>
+  <button class="btn" id="btnDesbloquear">Desbloquear nuestra historia ❤️</button>
+  <div id="correcto" class="correcto"><h2>Correcto ❤️</h2><p>Ahora sí... comienza nuestra historia.</p></div>
+</section>
+
+<!-- HISTORIETA (las escenas se crean desde script.js) -->
+<main id="historia"></main>
+
+<!-- VISOR DE FOTOS -->
+<div id="visor"><button id="cerrar" aria-label="Cerrar">✕</button><img id="visorImg" alt=""></div>
+
+<!-- SORPRESA FINAL -->
+<div id="telon"><div id="mensajeFinal"></div></div>
+
+<audio id="audio" preload="none"></audio>
+<div id="lluvia"></div>
+<script src="script.js"></script>
+</body>
+</html>
